@@ -1,0 +1,47 @@
+.superinfo{
+  background: $color-primary;
+  padding: rem(6) 0;
+
+  p{
+    @include nunito-bold($smaller-font-size, $white)
+  }
+}
+
+.header{
+  padding: rem(11) 0;
+  background: $color-tird-dark;
+
+  .header__flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header__nav ul{
+    display: flex;
+
+  } 
+
+
+  .header__nav ul li a{
+    @include nunito-bold($smaller-font-size, $white);  
+  } 
+
+  .header__circle{
+    &::after{
+      display: inline-block;
+      content: '';
+      width: 8.5px;
+      height: 8.5px;
+      border-radius: 50%;
+      border: 2px solid $white;
+      margin: 0 15px;
+    }
+  }
+
+  .header__red{
+    border-bottom: 2px solid $color-for;
+  }
+  
+}

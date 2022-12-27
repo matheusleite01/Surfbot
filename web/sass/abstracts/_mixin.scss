@@ -1,0 +1,28 @@
+@mixin responsive($size){
+  $phones: 600px;
+  $tablets: 900px;
+  $desktop: 1200px;
+
+  @if $size == mobile {
+    @media screen and (max-width: $phones) {
+      @content;
+    }
+  }
+  @else if $size == tablets {
+    @media screen and (min-width: $tablets) and (max-width: #{$desktop - 1}) {
+      @content;
+    }
+  }
+  @else if $size == desktop {
+    @media screen and (min-width: $desktop){
+      @content;
+    }
+  }
+};
+
+@mixin nunito-bold($size, $color){
+  font-family: $font-text;
+  font-weight: bold;
+  font-size: $size;
+  color: $color;
+}
