@@ -1,0 +1,69 @@
+.intro {
+  padding-top: rem(200);
+  padding-bottom: rem(200);
+  background: url('../../img/bg-intro.jpg') no-repeat center;
+  background-size: cover;
+  
+  .intro__flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 150px;
+    gap: 15px;
+    @include responsive(mobile){
+      justify-content: center;
+    }
+    
+      h1 {
+        font-family: $font-title;
+        font-size: $big-font-size;
+        color: $white;
+        @include responsive(mobile){
+          font-size: rem(45);
+        }
+      }
+
+      .intro__form {
+          display: flex;
+          input {
+            padding: rem(5);
+            @include nunito-bold($small-font-size, $color-secondary);
+            border-radius: 5px 0px 0px 5px;
+            border: none;
+            outline: none;
+            @include responsive(mobile) {
+              font-size: $smaller-font-size;
+              
+            }
+          } 
+
+          button {
+            padding: rem(13) rem(38) rem(13) rem(13);
+            @include nunito-bold($small-font-size, $white);
+            background-color: $color-for;
+            border-radius: 0px 5px 5px 0px;
+            border: none;
+            cursor: pointer;
+            @include responsive(mobile){
+              font-size: rem(12);
+              padding: rem(13) rem(13) rem(13) rem(13);
+            }
+          }&::after{
+            position: relative;
+            top: 18px;
+            right: 23px;
+            display: block;
+            content: '';
+            background: url(../../img/icones/seta.svg) no-repeat;
+            width: 16px;
+            height: 16px;
+            @include responsive(mobile){
+              display: none;
+            }
+            
+          }
+      }
+  }
+}
