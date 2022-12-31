@@ -68,4 +68,85 @@ li {
 }
 .header .header__red {
   border-bottom: 2px solid #EE2211;
+}
+
+.intro {
+  padding-top: 12.5rem;
+  padding-bottom: 12.5rem;
+  background: url("../../img/bg-intro.jpg") no-repeat center;
+  background-size: cover;
+}
+.intro .intro__flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 150px;
+  gap: 15px;
+}
+@media screen and (max-width: 600px) {
+  .intro .intro__flex {
+    justify-content: center;
+  }
+}
+.intro .intro__flex h1 {
+  font-family: "Alice", serif;
+  font-size: 4.5em;
+  color: #fff;
+}
+@media screen and (max-width: 600px) {
+  .intro .intro__flex h1 {
+    font-size: 2.8125rem;
+  }
+}
+.intro .intro__flex .intro__form {
+  display: flex;
+}
+.intro .intro__flex .intro__form input {
+  padding: 0.3125rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  font-size: 1.125em;
+  color: #C3CBD9;
+  border-radius: 5px 0px 0px 5px;
+  border: none;
+  outline: none;
+}
+@media screen and (max-width: 600px) {
+  .intro .intro__flex .intro__form input {
+    font-size: 0.875em;
+  }
+}
+.intro .intro__flex .intro__form button {
+  padding: 0.8125rem 2.375rem 0.8125rem 0.8125rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  font-size: 1.125em;
+  color: #fff;
+  background-color: #EE2211;
+  border-radius: 0px 5px 5px 0px;
+  border: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  .intro .intro__flex .intro__form button {
+    font-size: 0.75rem;
+    padding: 0.8125rem 0.8125rem 0.8125rem 0.8125rem;
+  }
+}
+.intro .intro__flex .intro__form::after {
+  position: relative;
+  top: 18px;
+  right: 23px;
+  display: block;
+  content: "";
+  background: url(../../img/icones/seta.svg) no-repeat;
+  width: 16px;
+  height: 16px;
+}
+@media screen and (max-width: 600px) {
+  .intro .intro__flex .intro__form::after {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
