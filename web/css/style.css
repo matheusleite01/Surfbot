@@ -149,4 +149,145 @@ li {
   .intro .intro__flex .intro__form::after {
     display: none;
   }
+}
+
+.beach {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.9375rem;
+  margin-top: 4.25rem;
+}
+@media screen and (min-width: 1200px) {
+  .beach {
+    flex-direction: row-reverse;
+    align-items: flex-start;
+  }
+}
+
+.beach__map {
+  flex: 1;
+  order: 2;
+}
+.beach__map .beach__map__info {
+  margin-top: 1.875rem;
+}
+.beach__map .beach__map__info h3 {
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  font-size: 0.875em;
+  color: #2D3440;
+}
+.beach__map .beach__map__info h3::before {
+  display: inline-block;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border: 2px solid #EE2211;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.beach__map .beach__map__info ul {
+  margin-top: 15px;
+}
+.beach__map .beach__map__info ul li {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.125em;
+  color: #2D3440;
+  margin-bottom: 5px;
+}
+.beach__map .beach__map__info ul li::before {
+  display: inline-block;
+  content: "";
+  width: 10px;
+  height: 2px;
+  background: #2266DD;
+  margin: 0px 3px 5px 0px;
+}
+.beach__map .beach__map__info ul li span {
+  color: #C3CBD9;
+  font-weight: normal;
+}
+@media screen and (max-width: 600px) {
+  .beach__map .beach__map__info ul li {
+    font-size: 0.875em;
+  }
+}
+
+.beach__info {
+  flex: 1;
+  max-width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .beach__info {
+    max-width: 470px;
+  }
+}
+.beach__info h1 {
+  max-width: 100%;
+  text-align: center;
+  font-family: "Alice", serif;
+  font-size: 4.5em;
+  color: #2D3440;
+  margin-bottom: 60px;
+}
+.beach__info h1 span {
+  color: #2266DD;
+}
+@media screen and (min-width: 1200px) {
+  .beach__info h1 {
+    max-width: 460px;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 600px) {
+  .beach__info h1 {
+    font-size: 2.5rem;
+  }
+}
+.beach__info ul li {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.875rem;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.5em;
+  color: #596272;
+  margin-bottom: 30px;
+}
+.beach__info ul li::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #EFF4F9;
+}
+@media screen and (max-width: 600px) {
+  .beach__info ul li {
+    font-size: 1.125em;
+  }
+}
+.beach__info .beach__info__p {
+  margin-top: 1.875rem;
+}
+.beach__info .beach__info__p p {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.125em;
+  color: #2D3440;
+  line-height: 140.62%;
+  margin-bottom: 1.875rem;
+}
+.beach__info .beach__info__p::before {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #EFF4F9;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 600px) {
+  .beach__info .beach__info__p {
+    font-size: 0.875em;
+  }
 }/*# sourceMappingURL=style.css.map */

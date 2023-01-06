@@ -12,6 +12,7 @@
     position: relative;
     top: 150px;
     gap: 15px;
+    
     @include responsive(mobile){
       justify-content: center;
     }
