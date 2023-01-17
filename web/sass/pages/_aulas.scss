@@ -1,5 +1,6 @@
 .aulas {
   background: $color-secondary-light;
+  padding-bottom: rem(80);
   .aulas__title{
     text-align: center;
     position: relative;
@@ -17,25 +18,25 @@
   .aulas__flex{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 10px;
+    justify-content: center;
+    gap: rem(30);
+    
   }
 }
 
 .aulas__card{
-  flex: 1;
+  flex: 1 1 auto;
   max-width: 370px;
   background-color: $white;
-  padding: rem(30) rem(50);
+  padding: rem(30) rem(70);
   border-radius: rem(5);
   box-shadow: 0px 4px 4px rgba(195, 203, 217, 0.4), 0px 10px 10px rgba(195, 203, 217, 0.4);
   position: relative;
 
-
     .aulas__card__img{
       position: absolute;
       top: -20px;
-      left: 130px;
+      left: 170px;
     }
     .aulas__card__title{
       @include nunito-bold($normal-font-size, $color-tird-dark);
@@ -50,8 +51,9 @@
       }
     }
     .aulas__card__list{
-      padding: rem(20) rem(20);
+      padding: rem(20) rem(0) rem(20) rem(20);
       li {
+        margin: 0 auto;
         font-family: $font-text;
         font-size: $smaller-font-size;
         color: $color-tird-dark;
@@ -99,4 +101,23 @@
       }
       
     }
+}
+
+.aulas__info{
+  font-family: $font-text;
+  font-size: $small-font-size;
+  color: $color-tird-dark;
+  margin-top: rem(70);
+  text-align: center;
+
+    span {
+      color: $color-for;
+      font-weight: bold;
+   }
+   a {
+    color: $color-tird-dark;
+    border-bottom: 2px solid $color-for;
+   }
+
+  
 }
