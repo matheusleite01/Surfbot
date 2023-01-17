@@ -5,6 +5,7 @@
   flex-wrap:wrap;
   gap: rem(15);
   margin-top: rem(68);
+  margin-bottom: rem(60);
   @include responsive(desktop){
     flex-direction: row-reverse;
     align-items: flex-start;

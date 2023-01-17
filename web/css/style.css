@@ -158,6 +158,7 @@ li {
   flex-wrap: wrap;
   gap: 0.9375rem;
   margin-top: 4.25rem;
+  margin-bottom: 3.75rem;
 }
 @media screen and (min-width: 1200px) {
   .beach {
@@ -290,4 +291,131 @@ li {
   .beach__info .beach__info__p {
     font-size: 0.875em;
   }
+}
+
+.aulas {
+  background: #EFF4F9;
+  padding-bottom: 5rem;
+}
+.aulas .aulas__title {
+  text-align: center;
+  position: relative;
+  top: -27px;
+}
+.aulas .aulas__title h1 {
+  font-family: "Alice", serif;
+  font-size: 4.5em;
+  line-height: 140.6%;
+  color: #2D3440;
+}
+.aulas .aulas__title img {
+  margin: 0 auto;
+}
+.aulas .aulas__flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.875rem;
+}
+
+.aulas__card {
+  flex: 1 1 auto;
+  max-width: 370px;
+  background-color: #fff;
+  padding: 1.875rem 4.375rem;
+  border-radius: 0.3125rem;
+  box-shadow: 0px 4px 4px rgba(195, 203, 217, 0.4), 0px 10px 10px rgba(195, 203, 217, 0.4);
+  position: relative;
+}
+.aulas__card .aulas__card__img {
+  position: absolute;
+  top: -20px;
+  left: 170px;
+}
+.aulas__card .aulas__card__title {
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #2D3440;
+  text-align: center;
+}
+.aulas__card .aulas__card__title::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #EFF4F9;
+  margin-top: 30px;
+}
+.aulas__card .aulas__card__list {
+  padding: 1.25rem 0rem 1.25rem 1.25rem;
+}
+.aulas__card .aulas__card__list li {
+  margin: 0 auto;
+  font-family: "Nunito", sans-serif;
+  font-size: 0.875em;
+  color: #2D3440;
+  margin-bottom: 0.9375rem;
+}
+.aulas__card .aulas__card__list li::before {
+  display: inline-block;
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 2px solid #EE2211;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.aulas__card .aulas__card__price {
+  display: block;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  font-size: 0.875em;
+  color: #2266DD;
+  margin-bottom: 1.875rem;
+}
+.aulas__card .aulas__card__price::before {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #EFF4F9;
+  margin-bottom: 15px;
+}
+.aulas__card .aulas__card__button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  font-size: 1.125em;
+  color: #fff;
+  background: #2D3440;
+  border-radius: 0.3125rem;
+  padding: 0.625rem 0.9375rem;
+  cursor: pointer;
+}
+.aulas__card .aulas__card__button::after {
+  content: "";
+  display: inline-block;
+  background: url(../../img/icones/seta.svg) no-repeat center;
+  width: 15px;
+  height: 15px;
+}
+
+.aulas__info {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.125em;
+  color: #2D3440;
+  margin-top: 4.375rem;
+  text-align: center;
+}
+.aulas__info span {
+  color: #EE2211;
+  font-weight: bold;
+}
+.aulas__info a {
+  color: #2D3440;
+  border-bottom: 2px solid #EE2211;
 }/*# sourceMappingURL=style.css.map */
