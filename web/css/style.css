@@ -418,4 +418,42 @@ li {
 .aulas__info a {
   color: #2D3440;
   border-bottom: 2px solid #EE2211;
+}
+
+.quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30rem;
+  background: url("../../img/foto-quote.jpg") no-repeat center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+@media screen and (max-width: 600px) {
+  .quote {
+    height: 30rem;
+  }
+}
+.quote p {
+  max-width: 45.625rem;
+  font-family: "Alice", serif;
+  font-size: 3.75rem;
+  margin-bottom: 0.9375rem;
+}
+@media screen and (min-width: 1200px) {
+  .quote p {
+    font-size: 4.5em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .quote p {
+    font-size: 1.875rem;
+  }
+}
+.quote cite {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.125em;
+  font-weight: bold;
+  margin-top: 1.875rem;
 }/*# sourceMappingURL=style.css.map */
