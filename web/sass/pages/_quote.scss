@@ -1,0 +1,32 @@
+.quote{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: rem(480);
+  background: url('../../img/foto-quote.jpg') no-repeat center;
+  background-size: cover;
+  text-align: center;
+  color: $white;
+  @include responsive(mobile){
+    height: rem(480);
+  }
+    p{
+      max-width: rem(730);
+      font-family: $font-title;
+      font-size: rem(60);
+      margin-bottom: rem(15);
+      @include responsive(desktop){
+        font-size: $big-font-size;
+      }
+      @include responsive(mobile){
+        font-size: rem(30);
+      }
+  }
+    cite{
+      font-family: $font-text;
+      font-size: $small-font-size;
+      font-weight: bold;
+      margin-top: rem(30);
+    }
+  
+}
