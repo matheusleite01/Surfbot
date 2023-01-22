@@ -1,0 +1,171 @@
+.contato{
+  margin-top: rem(60);
+  h1{
+    font-family: $font-title;
+    font-size: $big-font-size;
+    color: $color-tird-dark;
+    text-align: center;
+    margin-bottom: rem(30);
+  }
+  
+  .contato__flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  @include responsive(desktop){
+    gap: 100px;
+  }
+}
+}
+
+.contato__flex__form{
+  @include responsive(desktop){
+    flex: 1 1 150px;
+    border-right: 2px solid $color-secondary-light;
+  }
+  flex: 2 1 400px;
+  label {
+    display: block;
+    font-family: $font-text;
+    font-size: $small-font-size;
+    color: $color-tird;
+    font-weight: bold;
+    margin-bottom: rem(5);
+  }
+  input{
+    width: 100%;
+    max-width: rem(470);
+    padding: rem(15);
+    margin-bottom: rem(15);
+    background: $color-secondary-light;
+    border: none;
+    border-radius: rem(5);
+    font-family: $font-text;
+    font-size: $small-font-size;
+    color: $color-secondary-dark;
+    font-weight: bold;
+    outline: none;
+  }
+  textarea {
+    width: 100%;
+    max-width: rem(470);
+    height: rem(180);
+    padding: rem(10);
+    resize: none;
+    background: $color-secondary-light;
+    border: none;
+    border-radius: rem(5);
+    font-family: $font-text;
+    font-size: $small-font-size;
+    color: $color-secondary-dark;
+    font-weight: bold;
+    outline: none;
+    margin-bottom: rem(30);
+  }
+  button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    @include nunito-bold($small-font-size, $white);
+    background: $color-tird-dark;
+    border-radius: rem(5);
+    padding: rem(12) rem(15);
+    cursor: pointer;
+    border: none;
+    &::after{
+      content: '';
+      display: inline-block;
+      background: url(../../img/icones/seta.svg) no-repeat center;
+      width: 15px;
+      height: 15px;
+      margin-left: rem(12);
+    }
+  }
+}
+
+
+.contato__flex__info{
+  @include responsive(desktop){
+      flex: 1;
+      max-width: 100%;
+  }
+  flex: 1 1 200px;
+  max-width: 300px;
+  position: relative;
+    @include responsive(desktop){
+      &::after{
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      content: '';
+      display: block;
+      background: url(../../img/icones/bg-icones.svg) no-repeat center;
+      width: 200px;
+      height: 250px;
+    }
+    }
+
+    
+    div{
+      &:nth-child(-n+2){
+      &::after{
+        display: block;
+        content: '';
+        width: 270px;
+        height: 2px;
+        margin: 10px 0 ;
+        background: $color-secondary-light;
+      }
+      }
+    }
+
+    dt{
+      font-family: $font-text;
+      font-size: $small-font-size;
+      color: $color-tird;
+      font-weight: bold;
+      margin-bottom: rem(5);
+    }
+
+    dd{
+      font-family: $font-text;
+      font-size: $smaller-font-size;
+      color: $color-tird-dark;
+      margin-bottom: rem(5) ;
+    }
+
+    a{
+      display: flex;
+      align-items: center;
+      font-family: $font-text;
+      font-size: $small-font-size;
+      color: $color-tird-dark;
+      font-weight: bold;
+      &::after{
+
+        content: '';
+        background: url(../../img/icones/seta-red.svg) no-repeat center;
+        width: 16px;
+        height: 16px;
+        margin-left: 15px;
+      }
+    }
+
+    .contato__flex__info__dthorario{
+      &::before{
+        position: relative;
+        top: 16px;
+        left: -15px;
+        display: block;
+        content: '';
+        width: 8px;
+        height: 8px;
+        border: 2px solid #16C40B;
+        border-radius: 50%;
+      }
+    }
+
+      
+  }
