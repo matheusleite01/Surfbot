@@ -1,0 +1,20 @@
+.footer{
+  margin-top: rem(60);
+  padding: rem(40);
+  background: $color-primary;
+  .footer__info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: rem(10);
+    font-family: $font-text;
+    font-size: $small-font-size;
+    font-weight: bold;
+    color: $white;
+    text-align: center;
+    @include responsive(mobile){
+      justify-content: center;
+    }
+  }
+}
